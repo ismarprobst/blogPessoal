@@ -17,18 +17,29 @@ public class Usuario {
 	@GeneratedValue(strategy =GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotNull
+	@NotNull(message = "Preencher com o nome.")
 	@Size(min = 2, max = 100)
 	private String nome;
 	
-	@NotNull
+	@NotNull(message = "Preencher com um nome de usuario valido de 5 a 100 caracteres.")
 	@Size(min = 5, max = 100)
 	private String usuario;
 	
-	@NotNull
+	@NotNull(message = "Preencher com uma senha de 5 a 100 caracteres.")
 	@Size(min = 5, max = 100)
 	private String senha;
 
+	// Criados construtores para fazer testes JUnit
+	public Usuario() {}
+	
+	public Usuario(String nome, String usuario, String senha) {
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+	}
+	
+	
+	
 	public Long getId() {
 		return id;
 	}
