@@ -1,6 +1,6 @@
 package org.generation.blogPessoal.model;
 
-public class UserLogin {
+public class UserLogin { //model do usuario logado. A outra model serve para cadastrar os dados do usuario no BD
 
 	private String nome;
 	
@@ -9,6 +9,22 @@ public class UserLogin {
 	private String senha;
 	
 	private String token;
+	
+	private String foto;
+	
+	private String tipo;
+	
+	private long id;
+
+	
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	public String getNome() {
 		return nome;
@@ -41,4 +57,22 @@ public class UserLogin {
 	public void setToken(String token) {
 		this.token = token;
 	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
+	
 }
