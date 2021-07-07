@@ -1,5 +1,6 @@
 package org.generation.blogPessoal.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.generation.blogPessoal.model.UserLogin;
@@ -28,6 +29,11 @@ public class UsuarioController {
 	
 	@Autowired
 	private UsuarioRepository repository;
+	
+	@GetMapping
+	public ResponseEntity<List<Usuario>> GetAll() {
+		return ResponseEntity.ok(repository.findAll());
+	}
 	
 	
 	
