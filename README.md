@@ -1,5 +1,4 @@
 # blogPessoal
-Módulo 2 do Bootcamp da Generation, exercício sobre Spring Boot.
+Criação de uma API REST - com Controladores, Repositórios, Modelos e Segurança - do Spring Boot, para um blog pessoal.
 
-Atividades referentes aos vídeos da plataforma da Generation, onde criamos uma 
-API REST - com Controladores, Repositórios, Modelos e Segurança - do Spring Boot, para um blog pessoal.
+Esse projeto foi desenvolvido durante o curso de Desenvolvedor Java Full Stack Jr da Generation Brasil
